@@ -177,9 +177,16 @@ footer .copy{color:rgba(245,240,232,.35);}
 
 <!-- SIDEBAR -->
 <div class="sb">
-  <div class="sb-header">
-    <h3>Zone Explorer</h3>
-    <p>Select a zone on the map or from the legend below</p>
+  <div class="empty-scene" id="empty-scene" style="height:200px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#141c24;border-bottom:1px solid rgba(255,255,255,.06);">
+    <div style="font-family:'Playfair Display',serif;font-size:.95rem;color:rgba(245,240,232,.2);margin-bottom:6px;">Click any zone</div>
+    <div style="font-size:.65rem;color:rgba(245,240,232,.25);letter-spacing:.1em;">← to see it come to life</div>
+  </div>
+  <div id="scene-wrap" style="display:none;height:200px;flex-shrink:0;position:relative;overflow:hidden;background:#141c24;border-bottom:1px solid rgba(255,255,255,.08);">
+    <div id="scene-inner" style="width:100%;height:100%;position:relative;"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:10px 14px 8px;background:linear-gradient(transparent,rgba(20,28,36,.92));">
+      <div id="scene-name" style="font-family:'Playfair Display',serif;font-size:1rem;color:#F5F0E8;"></div>
+      <div id="scene-sub" style="font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#B8922E;margin-top:1px;"></div>
+    </div>
   </div>
   <div class="panel-scroll">
     <div class="leg">
@@ -525,18 +532,48 @@ footer .copy{color:rgba(245,240,232,.35);}
 </footer>
 
 <script>
+const photos = {
+  sf:    { src: 'images/img_002.jpg', name:'Single Family Homes', sub:'Stone & Brick Hamlet Clusters · 255 Homes · 3 Tiers' },
+  th:    { src: 'images/img_003.jpg', name:'Townhomes', sub:'French Beaux-Arts Row Homes · 650 Units · $450K–$680K' },
+  rc:    { src: 'images/img_004.png', name:'The Ridge Club', sub:'80,000 SF · Life Time–Caliber Athletic Facility' },
+  hh:    { src: 'images/img_005.png', name:'The Healing House', sub:'22,000 SF · 9 Wellness Modalities · $2.8M/yr' },
+  condo55:{ src: 'images/img_006.png', name:'Condos & Flats (55+)', sub:'300 HOPA Units · Above Village Retail · From $255K' },
+  condoconv:{ src: 'images/img_006.png', name:'Condos & Flats (Conventional)', sub:'200 All-Age Units · Near Ridge Club · From $240K' },
+  parks: { src: 'images/img_007.png', name:'Parks & Green Space', sub:'90 Acres · 40ac Preserved + 50ac Active · 4.5mi Trails' },
+  safety:{ src: null, name:'Safety & Security', sub:'Gated · 24/7 Staffed · LPR & HD Cameras · CPTED Design' },
+  cottages:{ src: 'images/cottage_garden.png', name:'Cottages', sub:'190 Homes · Garden & Gated Tiers · Cobblestone Courtyards' },
+  village:{ src: 'images/img_008.jpg', name:'The Village', sub:'65,000 SF · 40% Minority-Reserved · Cobblestone Plaza' },
+  pool:  { src: null, name:'Community Pool', sub:'4,500 SF Resort-Style · Resident-Only · Dawn to Dusk' }
+};
 let cur=null;
 function sel(z){
   // Clear all
   document.querySelectorAll('.hotspot,.li').forEach(e=>e.classList.remove('on'));
   document.querySelectorAll('.dc').forEach(e=>e.classList.remove('on'));
   document.getElementById('defaultHint').style.display='none';
-  if(cur===z){cur=null;document.getElementById('defaultHint').style.display='';return;}
+  // Scene area
+  const sceneWrap=document.getElementById('scene-wrap');
+  const emptyScene=document.getElementById('empty-scene');
+  if(cur===z){cur=null;document.getElementById('defaultHint').style.display='';if(emptyScene)emptyScene.style.display='flex';if(sceneWrap)sceneWrap.style.display='none';return;}
   cur=z;
   // Activate
   document.querySelectorAll('[data-zone="'+z+'"]').forEach(e=>e.classList.add('on'));
   const dc=document.getElementById('dc-'+z);
   if(dc)dc.classList.add('on');
+  // Show scene photo
+  const p=photos[z];
+  if(p && emptyScene && sceneWrap){
+    emptyScene.style.display='none';
+    sceneWrap.style.display='block';
+    const inner=document.getElementById('scene-inner');
+    if(p.src){
+      inner.innerHTML='<img src="'+p.src+'" style="width:100%;height:100%;object-fit:cover;display:block;"/>';
+    } else {
+      inner.innerHTML='<div style="width:100%;height:100%;background:#2b3540;display:flex;align-items:center;justify-content:center;"><span style="font-family:Playfair Display,serif;color:rgba(201,168,76,.5);font-size:.9rem;">Rendering coming soon</span></div>';
+    }
+    document.getElementById('scene-name').textContent=p.name;
+    document.getElementById('scene-sub').textContent=p.sub;
+  }
 }
 </script>
 </body>
