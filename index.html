@@ -6,7 +6,7 @@
 <title>Hawks Ridge — Interactive Master Plan</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F5F0E8;--gold:#B8922E;--slate:#1C3A2B;--slate2:#C8B89A;}
+:root{--cream:#F5F0E8;--gold:#B8922E;--slate:#1C3A2B;--slate2:#C8B89A;--terra:#8B3A2A;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:var(--slate);font-family:'DM Sans',sans-serif;height:100vh;overflow:hidden;display:flex;flex-direction:column;}
 header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(201,168,76,.25);flex-shrink:0;}
@@ -168,6 +168,18 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
       <div class="li" onclick="sel('cot')"><div class="ld" style="background:#a0714a"></div><span class="lt">Cottages</span><span class="lac">20 ac · 140</span></div>
     </div>
     <div class="div"></div>
+    <div style="padding:8px 16px;">
+      <div class="leg-hd">Development Phasing</div>
+      <div class="sr"><span class="sl">Phase 1 (2026–2028)</span><span class="sv">SFR (110 std) · Cottages (80 garden) · Healing House · Village core · Parks infrastructure</span></div>
+      <div class="sr"><span class="sl">Phase 2 (2028–2030)</span><span class="sv">840 Townhomes · Ridge Club · Condos (180) · Gated Cottages (60) · Remaining SFR (145)</span></div>
+      <div class="sr"><span class="sl">Phase 3 (2030–2032)</span><span class="sv">Remaining 180 Condos · Village expansion · Final amenities</span></div>
+      <div class="leg-hd" style="margin-top:10px;">Capital Stack — Phase 1</div>
+      <div class="sr"><span class="sl">Total Investment</span><span class="sv">$345M – $545M</span></div>
+      <div class="sr"><span class="sl">Land Basis</span><span class="sv">357 ac · ~$28K/ac current</span></div>
+      <div class="sr"><span class="sl">Phase 1 Budget</span><span class="sv">~$85M (infrastructure + first deliveries)</span></div>
+      <div class="sr"><span class="sl">Target IRR</span><span class="sv">22–28%</span></div>
+    </div>
+    <div class="div"></div>
     <div class="dp">
       <div class="hint" id="hint">Click any zone to explore details</div>
       <div class="dc" id="card-sf">
@@ -177,6 +189,7 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
         <div class="sr"><span class="sl">Premium (105)</span><span class="sv">⅓ ac · 3,000–4,000 SF · $575K–$775K · Greenway-Fronting</span></div>
         <div class="sr"><span class="sl">Standard (110)</span><span class="sv">¼ ac · 2,200–3,200 SF · $420K–$580K · Park-Adjacent</span></div>
         <ul class="bl"><li>Hamlet clusters around cobblestone courtyards</li><li>Deep covered porches, haint blue ceilings</li><li>Limestone, brick &amp; stucco — built to last 200 years</li><li>EV-ready garage, rear alley access</li><li>Edible landscaping — no sod</li></ul>
+        <div class="sr"><span class="sl">HOA Dues</span><span class="sv">Estate $450/mo · Premium $475/mo · Standard $500/mo</span></div>
         <div class="hb"><strong>Sellout ~$186M.</strong> Attainable luxury for the New Black Middle Class of Atlanta. Every home within 400 feet of a trail.</div>
       </div>
       <div class="dc" id="card-th">
@@ -186,6 +199,7 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
         <div class="sr"><span class="sl">Size</span><span class="sv">1,800 – 2,600 SF</span></div>
         <div class="sr"><span class="sl">Layout</span><span class="sv">3-story · 3–4 BD</span></div>
         <ul class="bl"><li>Full limestone facade, arched windows, monumental entry stairs</li><li>Juliet balconies with wrought iron railings</li><li>Rooftop terraces standard on all 3-story units</li><li>2-car attached garage</li></ul>
+        <div class="sr"><span class="sl">HOA Dues</span><span class="sv">$550/mo</span></div>
         <div class="hb"><strong>Sellout ~$353M.</strong> Largest residential product — creates the density that drives $14.7M+ commercial NOI.</div>
       </div>
       <div class="dc" id="card-condo">
@@ -196,6 +210,7 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
         <div class="sr"><span class="sl">Size</span><span class="sv">900 – 1,800 SF</span></div>
         <div class="sr"><span class="sl">Types</span><span class="sv">1–3 BD (no studios)</span></div>
         <ul class="bl"><li>Above Village retail — step out onto cobblestone</li><li>Limestone quoins, arched retail openings</li><li>Wrought iron balconies, cobblestone plaza below</li><li>Concierge services, secure parking</li></ul>
+        <div class="sr"><span class="sl">HOA Dues</span><span class="sv">$590/mo (includes concierge)</span></div>
         <div class="hb"><strong>Entry at ~$255K.</strong> Residents live above the pulse of the Village. First-time buyers, investors, empty-nesters.</div>
       </div>
       <div class="dc" id="card-rc">
@@ -247,6 +262,7 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
         <div class="sr"><span class="sl">Garden Cottages (80)</span><span class="sv">1,200–1,800 SF · $380K–$520K · Private Rear Garden</span></div>
         <div class="sr"><span class="sl">Gated Cottages (60)</span><span class="sv">1,900–2,200 SF · $490K–$650K · Wrought Iron Gate</span></div>
         <ul class="bl"><li>French and Spanish inspired row homes with private gardens</li><li>Hamlet clusters of 8–12 around cobblestone courtyards</li><li>Edible landscaping, haint blue porch ceilings</li></ul>
+        <div class="sr"><span class="sl">HOA Dues</span><span class="sv">Garden $475/mo · Gated $525/mo</span></div>
         <div class="hb"><strong>Sellout ~$63M.</strong> 20 ac total · Hamlet clusters of 8–12 around cobblestone courtyards. Old-world charm with modern luxury.</div>
       </div>
     </div>
