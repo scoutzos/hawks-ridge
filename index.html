@@ -66,6 +66,33 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
 .sb-stats{padding:10px 16px;border-top:1px solid rgba(255,255,255,.06);display:grid;grid-template-columns:1fr 1fr;gap:6px;flex-shrink:0;}
 .ms .v{font-family:'Playfair Display',serif;font-size:.82rem;color:var(--gold);}
 .ms .l{font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,240,232,.28);}
+
+/* Mobile toggle button */
+.map-toggle{display:none;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);color:var(--gold);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;cursor:pointer;font-family:'DM Sans',sans-serif;border-radius:4px;margin:8px 16px;text-align:center;}
+.map-toggle:active{background:rgba(201,168,76,.25);}
+
+@media(max-width:768px){
+  header{padding:8px 14px;flex-direction:column;gap:2px;text-align:center;}
+  .logo h1{font-size:1.1rem;}
+  .hdr-r{text-align:center;font-size:.5rem;line-height:1.6;}
+  body{overflow:auto;height:auto;}
+  .body{grid-template-columns:1fr;height:auto;overflow:visible;}
+  .sb{border-left:none;order:-1;}
+  .map-wrap{height:60vw;min-height:250px;order:1;}
+  .map-toggle{display:block;}
+  .map-wrap.hidden{display:none;}
+  .panel-scroll{max-height:none;overflow:visible;}
+  .empty-scene,.scene-wrap{height:140px;}
+  .sb-stats{grid-template-columns:1fr 1fr;gap:4px;padding:8px 12px;}
+  .ms .v{font-size:.72rem;}
+  .sr{flex-direction:column;gap:1px;}
+  .sr .sv{font-size:.6rem;}
+}
+@media(max-width:420px){
+  .sb-stats{grid-template-columns:1fr 1fr;}
+  .ms .v{font-size:.65rem;}
+  .map-wrap{height:50vw;min-height:200px;}
+}
 </style>
 </head>
 <body>
@@ -154,6 +181,7 @@ header{background:#141c24;padding:11px 28px;display:flex;justify-content:space-b
     </div>
   </div>
 
+  <button class="map-toggle" id="mapToggle" onclick="toggleMap()">Show Map ↓</button>
   <div class="panel-scroll">
     <div class="leg">
       <div class="leg-hd">Land Use Plan</div>
@@ -290,6 +318,13 @@ const photos = {
 };
 
 const legOrder = ['sf','th','condo','rc','hh','vill','parks','safety','cot'];
+
+function toggleMap(){
+  const m=document.getElementById('mapwrap');
+  const b=document.getElementById('mapToggle');
+  m.classList.toggle('hidden');
+  b.textContent=m.classList.contains('hidden')?'Show Map ↓':'Hide Map ↑';
+}
 let cur = null;
 
 function sel(z) {
