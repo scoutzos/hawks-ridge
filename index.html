@@ -43,6 +43,16 @@ header{background:var(--dark);padding:14px 32px;display:flex;justify-content:spa
 .hotspot-label{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);background:rgba(20,28,36,.9);color:var(--gold);font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;padding:3px 8px;border-radius:3px;opacity:0;transition:opacity .2s;pointer-events:none;}
 .hotspot:hover .hotspot-label,.hotspot.on .hotspot-label{opacity:1;}
 
+/* ZONE DETAIL OVERLAY */
+.zone-overlay{position:fixed;inset:0;z-index:1000;background:rgba(10,14,18,.92);backdrop-filter:blur(12px);display:none;flex-direction:column;align-items:center;justify-content:center;opacity:0;transition:opacity .3s ease;}
+.zone-overlay.open{display:flex;opacity:1;}
+.zone-overlay-close{position:absolute;top:20px;right:24px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(200,175,130,.25);color:var(--cream);font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:1001;}
+.zone-overlay-close:hover{background:rgba(184,146,46,.25);border-color:var(--gold);}
+.zone-overlay-img{max-width:90vw;max-height:70vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.6);object-fit:contain;}
+.zone-overlay-title{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--cream);margin-top:20px;text-align:center;}
+.zone-overlay-sub{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:6px;text-align:center;}
+.zone-overlay-placeholder{width:60vw;max-width:600px;height:40vh;border-radius:8px;background:rgba(43,53,64,.8);border:1px solid rgba(184,146,46,.15);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:rgba(201,168,76,.4);font-size:1.1rem;}
+
 /* SIDEBAR */
 .sb{background:var(--panel);border-left:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;overflow:hidden;}
 .sb-header{padding:16px 18px 12px;border-bottom:1px solid rgba(255,255,255,.06);}
@@ -601,6 +611,26 @@ function sel(z){
     document.getElementById('scene-name').textContent=p.name;
     document.getElementById('scene-sub').textContent=p.sub;
   }
+  // Open full overlay
+  openOverlay(z);
+}
+function openOverlay(z){
+  const p=photos[z];if(!p)return;
+  const ov=document.getElementById('zoneOverlay'),ct=document.getElementById('zoneOverlayContent');
+  document.getElementById('zoneOverlayTitle').textContent=p.name;
+  document.getElementById('zoneOverlaySub').textContent=p.sub;
+  if(p.src){
+    ct.innerHTML='<img class="zone-overlay-img" src="'+p.src+'" alt="'+p.name+'"/>';
+  } else {
+    ct.innerHTML='<div class="zone-overlay-placeholder">Rendering coming soon</div>';
+  }
+  ov.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeOverlay(e,force){
+  if(!force && e.target!==document.getElementById('zoneOverlay'))return;
+  document.getElementById('zoneOverlay').classList.remove('open');
+  document.body.style.overflow='';
 }
 // ── Map Zoom & Pan ──
 (function(){
@@ -636,5 +666,12 @@ function sel(z){
   window.resetMap=function(){scale=1;tx=0;ty=0;apply();};
 })();
 </script>
+<!-- Zone Detail Overlay -->
+<div class="zone-overlay" id="zoneOverlay" onclick="closeOverlay(event)">
+  <button class="zone-overlay-close" onclick="closeOverlay(event,true)">&times;</button>
+  <div id="zoneOverlayContent"></div>
+  <div class="zone-overlay-title" id="zoneOverlayTitle"></div>
+  <div class="zone-overlay-sub" id="zoneOverlaySub"></div>
+</div>
 </body>
 </html>
