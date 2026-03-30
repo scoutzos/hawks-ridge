@@ -184,3 +184,32 @@ function closeOverlay(e, force) {
     apply();
   };
 })();
+
+// Enhanced Navigation System
+document.addEventListener('DOMContentLoaded', function() {
+  const navTabs = document.querySelectorAll('.nav-tab');
+  const contentSections = document.querySelectorAll('.content-section');
+  
+  navTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetSection = this.getAttribute('data-section');
+      
+      // Remove active class from all tabs and sections
+      navTabs.forEach(t => t.classList.remove('active'));
+      contentSections.forEach(s => s.classList.remove('active'));
+      
+      // Add active class to clicked tab and corresponding section
+      this.classList.add('active');
+      const targetElement = document.getElementById(targetSection);
+      if (targetElement) {
+        targetElement.classList.add('active');
+      }
+      
+      // Smooth scroll to content area
+      document.querySelector('.sections').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    });
+  });
+});

@@ -117,6 +117,19 @@ footer p{font-size:.6rem;color:rgba(245,240,232,.25);line-height:1.8;letter-spac
 footer .copy{color:rgba(245,240,232,.35);}
 
 /* Responsive */
+/* ENHANCED NAVIGATION */
+.enhanced-nav{background:var(--panel);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:0 32px;}
+.nav-tabs{display:flex;justify-content:center;gap:0;max-width:1200px;margin:0 auto;}
+.nav-tab{background:transparent;border:none;color:rgba(245,240,232,.5);font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:16px 24px;cursor:pointer;transition:all .2s;position:relative;}
+.nav-tab:hover{color:rgba(245,240,232,.8);}
+.nav-tab.active{color:var(--gold);}
+.nav-tab.active::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:32px;height:2px;background:var(--gold);}
+
+/* CONTENT SECTIONS */
+.content-section{display:none;}
+.content-section.active{display:block;}
+.content-section .section:first-child{padding-top:40px;}
+
 @media(max-width:900px){
   .interactive{grid-template-columns:1fr;height:auto;}
   .map-wrap{height:50vh;}
@@ -124,4 +137,7 @@ footer .copy{color:rgba(245,240,232,.35);}
   .timeline{grid-template-columns:1fr;}
   .stats-bar{gap:24px;padding:14px 16px;}
   .hero h2{font-size:1.6rem;}
+  .enhanced-nav{padding:0 16px;}
+  .nav-tabs{justify-content:flex-start;overflow-x:auto;padding:0 4px;}
+  .nav-tab{padding:16px 18px;font-size:.65rem;}
 }
