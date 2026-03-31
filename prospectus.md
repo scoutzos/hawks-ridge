@@ -16,7 +16,7 @@ In Partnership with ScoutzOS Capital Partners
 
 Hawks Ridge is a 357-acre master-planned wellness community proposed for South Fulton, Georgia — one of the Atlanta metro's fastest-growing and most underserved corridors for premium real estate development.
 
-The project combines for-sale residential housing (single-family homes in three tiers, cottages in two tiers, Beaux-Arts townhomes, 55+ age-qualified condos, and conventional condos for traditional buyers), a Life Time–caliber athletic club, a full-spectrum wellness center, a curated mixed-use retail village, and permanently preserved green space — all within 15–20 minutes of downtown Atlanta.
+The project combines for-sale residential housing (single-family homes in three tiers, cottages in two tiers, Beaux-Arts townhomes, 55+ age-qualified condos, and conventional condos for traditional buyers), an 80,000 SF premium athletic club, a full-spectrum wellness center, a curated mixed-use retail village, and permanently preserved green space — all within 15–20 minutes of downtown Atlanta.
 
 Hawks Ridge is designed to fill a clear market gap: premium wellness-oriented community living at attainable price points, built for and by the New Black Middle Class in the fastest-growing metro in America.
 
@@ -25,21 +25,21 @@ Hawks Ridge is designed to fill a clear market gap: premium wellness-oriented co
   ————————– —————————————————————————————
   **Site**                   **Hawks Ridge — 357 Acres, South Fulton, Georgia**
 
-  Residential Units          \~1,445 concept units — subject to civil engineering yield validation
+  Residential Units          1,135 concept units — subject to civil engineering yield validation
 
   Concept Program            255 SFR · 190 Cottages · 650 Townhomes · 300 Condos (55+) · 200 Condos (conventional)
 
-  Estimated Sellout          $820M–$880M — Market-calibrated across all product types
+  Estimated Sellout          $560M+ — Market-calibrated across all product types
 
   Commercial Program         167,000 SF — Athletic club + wellness + retail
 
   Stabilized NOI             $12.2M/year — Commercial assets fully leased (Year 4+)
 
-  Total Investment           $355M–$545M — Phased 2026–2032
+  Total Investment           $345M–$445M — Phased 2026–2032
 
-  Estimated IRR              22–27% — 6-year phased development
+  Estimated IRR              22–28% — 6-year phased development
 
-  Total Project Value        $1B+ — At stabilization
+  Total Project Value        $780M+ — At stabilization
   ————————– —————————————————————————————
 
 # 2. Vision & Concept
@@ -54,7 +54,7 @@ A diverse range of ownership-oriented housing products designed for aspirational
 
 **MOVE — The Ridge Club**
 
-An 80,000 SF Life Time–caliber athletic facility anchoring the community. Open to both residents and the broader South Fulton market, with full indoor facilities, outdoor courts, a 1.5-mile outdoor fitness trail, and direct connection to the 4.5-mile community trail network.
+An 80,000 SF premium athletic facility anchoring the community. Open to both residents and the broader South Fulton market, with full indoor facilities, outdoor courts, a 1.5-mile outdoor fitness trail, and direct connection to the 4.5-mile community trail network.
 
 **HEAL — The Healing House**
 
@@ -82,7 +82,7 @@ A 65,000 SF curated mixed-use retail village featuring local food and beverage, 
 
 -   Carbon-neutral construction standards for all commercial buildings
 
--   EV charging in every residential garage and all surface parking areas
+-   Comprehensive EV charging infrastructure: 100% EV-ready homes + 22+ community charging stations with Community Trust revenue integration
 
 # 3. Site & Location Analysis
 
@@ -609,7 +609,7 @@ The Healing House is a 22,000 SF full-spectrum wellness destination offering nin
 
 # 7. The Ridge Club — Athletic Facility
 
-The Ridge Club is an 80,000 SF premium athletic club modeled on Life Time Fitness — open to community residents through their HOA membership and to the broader South Fulton market through standard club membership.
+The Ridge Club is an 80,000 SF premium athletic club — open to community residents through their HOA membership and to the broader South Fulton market through standard club membership.
 
 ## 7.1 Indoor Facility
 
@@ -656,7 +656,7 @@ The Ridge Club is an 80,000 SF premium athletic club modeled on Life Time Fitnes
   ————————– ——————————————–
 
   ———————————————————————————————————————————————————————————
-  *Life Time–caliber facility open to both residents and the broader South Fulton market. Anchor commercial revenue driver generating $4.8M–$6.5M annually at stabilization.*
+  *Premium resort-caliber facility open to both residents and the broader South Fulton market. Anchor commercial revenue driver generating $4.8M–$6.5M annually at stabilization.*
 
   ———————————————————————————————————————————————————————————
 
@@ -803,7 +803,86 @@ Crime Prevention Through Environmental Design (CPTED) is built into the master p
 
 -   Consistent lighting at all pedestrian transition points
 
-# 11. Development Phasing
+# 11. Comprehensive EV Charging Infrastructure
+
+Hawks Ridge is designed as South Fulton's first 100% electric vehicle ready master-planned community, featuring comprehensive charging infrastructure that serves both residents and visitors while generating revenue for the Community Trust.
+
+## 11.1 Residential EV Infrastructure — 100% Coverage
+
+**All Single-Family Homes & Townhomes:**
+-   240V EV-ready garage outlets installed in all 2-3 car garages
+-   Electrical systems sized for EV charging loads without upgrades
+-   Smart charging integration with home energy management systems  
+-   Solar-ready electrical design supporting EV charging from renewable energy
+-   Conduit and wiring prepared for rapid EV technology evolution
+
+**55+ Condominiums:**
+-   Secure below-grade parking with EV charging capability
+-   Building electrical infrastructure sized for resident charging needs
+-   Dedicated EV charging coordinator as part of concierge services
+
+## 11.2 Community Charging Network — Phase 1: 22+ Stations
+
+**Strategic Placement:**
+-   **The Village (8 stations):** Four dual-port Level 2 charging stations serving retail customers and residents
+-   **The Ridge Club (6 stations):** Three dual-port stations for athletic club members and visitors  
+-   **The Healing House (4 stations):** Two dual-port stations for wellness center clients
+-   **Community Entrances (4 stations):** Two dual-port stations for visitor convenience
+
+**Technical Specifications:**
+-   Level 2 charging (240V, 40-80 amp circuits) providing 25-40 miles range per hour
+-   Dual-port stations serving two vehicles simultaneously  
+-   ChargePoint or equivalent network integration for mobile app access and payment processing
+-   Infrastructure designed for expansion to 50+ stations at full community build-out
+
+## 11.3 Community Trust Revenue Integration
+
+**Ownership Model:**
+-   All community charging stations owned by Hawks Ridge Community Trust
+-   Residents share in charging station revenue through quarterly distributions
+-   Revenue model balances resident amenity with visitor income generation
+
+**Financial Structure:**
+-   **Resident Benefits:** First 100 kWh monthly charging included in HOA dues
+-   **Visitor Revenue:** Market-rate charging ($0.30-$0.50/kWh) generates Community Trust income
+-   **Estimated Revenue:** $2,000-$8,000 annually per station at 20% utilization
+-   **Community Trust Share:** Charging revenue flows to residents through established distribution model
+
+## 11.4 Expansion & Future Planning
+
+**Phase 2 & 3 Expansion:**
+-   Additional 25-30 Level 2 stations in townhome courtyards and additional parking areas
+-   DC fast charging evaluation for Village plaza premium amenity (80-250+ miles range in 30 minutes)
+-   Grid integration and energy storage systems to optimize electricity costs
+
+**Market Positioning:**
+-   First comprehensive EV community in South Fulton County
+-   EV infrastructure premium increases property values 4-7% based on comparable markets
+-   Future-proofed for projected 50% EV adoption by 2030
+-   Regulatory compliance ahead of anticipated local EV charging requirements
+
+## 11.5 Implementation & Investment
+
+**Phase 1 Investment:** $200,000-$500,000 (net of incentives)
+
+**Available Incentives:**
+-   Georgia Power Business Rebate: Up to $2,500 per station (10% of installation cost)
+-   Federal Tax Credit: 30% of commercial EV charging installation cost (through 2032)
+-   Georgia State Tax Credit: 10% of installation cost, up to $2,500 per business
+
+**Installation Timeline:**
+-   Q2 2026: Site electrical assessment, vendor selection, permit applications
+-   Q3 2026: Phase 1 installation (Village, Ridge Club, Healing House)
+-   Q4 2026-Q1 2027: Resident education, usage optimization, Phase 2 planning
+
+**Vendor Partnership:**
+-   ChargePoint (recommended): Largest network, proven multifamily experience, 90% revenue share to property owner
+-   Alternative vendors: Blink Charging, Tesla commercial charging solutions
+-   Professional installation: Qmerit or certified local electrical contractors
+
+This comprehensive EV infrastructure positions Hawks Ridge as the most technologically advanced and environmentally forward residential community in South Fulton, while creating a new revenue stream for residents through the Community Trust ownership model.
+
+# 12. Development Phasing
 
 ## Phase 1 — Foundation (2026–2027) \| Budget: \$45M–\$65M
 
@@ -858,7 +937,7 @@ Crime Prevention Through Environmental Design (CPTED) is built into the master p
 
   ——————————————————————————————————–
 
-# 12. Capital Stack & Financial Projections
+# 13. Capital Stack & Financial Projections
 
 This section presents the full financial model in four layers: capital stack, stabilized returns, absorption schedule, commercial revenue ramp, and phase-by-phase cash flows. Together these answer the capital question directly: when does money go out, when does it come back, and what is the return on invested equity.
 
@@ -902,7 +981,7 @@ This section presents the full financial model in four layers: capital stack, st
   **TOTAL**                 **$47M–$69M**   **100%**         **Phase 1 total capitalization**   
   ————————- —————— —————- ———————————- ———–
 
-## 12.2 Projected Returns at Stabilization
+## 13.2 Projected Returns at Stabilization
 
   ————————————– ————————————————————————————————————————————–
   **Residential Sellout (all phases)**   **$820M–$880M — \~1,445 concept units, market-calibrated**
@@ -928,7 +1007,7 @@ This section presents the full financial model in four layers: capital stack, st
   Note                                   All figures based on concept program. Subject to revision following civil engineering yield validation and formal feasibility study.
   ————————————– ————————————————————————————————————————————–
 
-## 12.3 Residential Absorption Schedule
+## 13.3 Residential Absorption Schedule
 
 The absorption schedule below projects unit delivery and sales pace by product type across the 6-year development timeline. Assumptions are based on South Fulton new construction absorption rates, comparable master-planned community data, and product-type velocity benchmarks.
 
@@ -984,7 +1063,7 @@ Product-type absorption priority by phase:
   Key risk                   Townhome absorption is the largest variable. 650 units over \~4 active selling years = \~13 units/month average. Achievable but requires consistent marketing investment and rate environment cooperation.
   ————————– ————————————————————————————————————————————————————————————————————
 
-## 12.4 Commercial Revenue Ramp
+## 13.4 Commercial Revenue Ramp
 
 Commercial revenue does not stabilize at opening. The table below shows realistic ramp assumptions for each revenue stream from Year 1 through full stabilization. These assumptions are used to model the IRR — not the stabilized NOI figure alone.
 
@@ -1053,7 +1132,7 @@ Commercial revenue does not stabilize at opening. The table below shows realisti
 
   —————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————-
 
-## 12.5 Phase-by-Phase Cash Flow Model
+## 13.5 Phase-by-Phase Cash Flow Model
 
 The table below is the full development cash flow model — capital deployed versus revenue received by year, with cumulative net position and equity multiple. This is the timing layer that answers the capital question: when does money go out, when does it come back, and what is the return on the equity invested.
 
@@ -1154,7 +1233,7 @@ The table below is the full development cash flow model — capital deployed ver
 
   ———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-# 13. Immediate Next Steps
+# 14. Immediate Next Steps
 
 ## Step 1 — Secure Option Agreement (Q2 2026)
 
@@ -1184,7 +1263,7 @@ Begin formal capital conversations with impact investment funds, EB-5 broker-dea
 
 File for rezoning, enterprise zone designation, and negotiate a Community Benefit Agreement (CBA) with the City of South Fulton. The CBA should formalize commitments around local hiring, minority business leasing, and affordable homeownership pathways.
 
-# 14. Disclosures & Assumptions
+# 15. Disclosures & Assumptions
 
 This document is prepared for discussion purposes only and does not constitute an offering of securities, real estate, or investment advice. All financial projections are estimates based on market comparables and are subject to change based on market conditions, entitlement outcomes, construction costs, and other factors beyond the developer's control.
 
@@ -1192,15 +1271,15 @@ Land acquisition is subject to due diligence, title review, environmental assess
 
 HomeScoutz Development Group and ScoutzOS Capital Partners are not registered investment advisors. This document should not be relied upon as the sole basis for any investment decision. Recipients should consult their own legal, financial, and real estate advisors.
 
-# 15. HOA Structure & Governance
+# 16. HOA Structure & Governance
 
-## 15.1 Overview
+## 16.1 Overview
 
 Hawks Ridge is governed by a single master HOA — the Hawks Ridge Community Association (HRCA) — with sub-associations for each residential product type. All homeowners are members of the master association. Townhome and condo owners additionally belong to their respective sub-associations, which govern shared building elements and product-specific amenities.
 
 The HRCA is structured as a Georgia nonprofit corporation under the Georgia Property Owners' Association Act. A professional HOA management company is engaged from Day 1 of Phase 1 occupancy. Transition to homeowner-controlled board governance occurs when 75% of units are sold or at the end of Phase 3, whichever comes first.
 
-## 15.2 What HOA Dues Cover
+## 16.2 What HOA Dues Cover
 
 **Master HOA — All Residents**
 
